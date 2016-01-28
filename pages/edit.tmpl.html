@@ -1,0 +1,29 @@
+{{define "edit"}}
+<html>
+  {{template "header"}}
+<body>
+<div>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="password" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+            <p class="help-block">This name will be your user id, which determine your cv's url: learnabout.me/yourid</p>
+        </div>
+        <div class="form-group">
+            <label for="intro">Introduction</label>
+            <textarea id="username"></textarea>
+        </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+</body>
+</html>
+{{end}}
